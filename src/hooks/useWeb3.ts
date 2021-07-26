@@ -7,7 +7,7 @@ import getRpcUrl from '../utils/getRpcUrl'
 
 const RPC_URL = getRpcUrl()
 const httpProvider = new Web3.providers.HttpProvider(RPC_URL, {
-  timeout: 10000
+  timeout: 10000,
 } as HttpProviderOptions)
 
 /**
