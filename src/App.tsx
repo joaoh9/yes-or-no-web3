@@ -9,8 +9,6 @@ function App() {
   const chainId: number = parseInt(process.env.REACT_APP_CHAIN_ID || '1')
   const rpcUrl = getRpcUrl()
 
-
-
   return (
     <div>
       <bsc.UseWalletProvider

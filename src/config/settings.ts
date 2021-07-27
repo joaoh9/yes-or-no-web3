@@ -7,6 +7,8 @@ interface Settings {
   pinataJwt: string | undefined
   pinataSecret: string | undefined
   pinataKey: string | undefined
+  moralistAppId: string
+  moralisServerUrl: string
 }
 
 const settings: Settings = {
@@ -18,6 +20,8 @@ const settings: Settings = {
   pinataJwt: process.env.REACT_APP_PINATA_JWT,
   pinataSecret: process.env.REACT_APP_PINATA_SECRET,
   pinataKey: process.env.REACT_APP_PINATA_KEY,
+  moralistAppId: process.env.REACT_APP_MORALIST_APP_ID || 'wrong-data',
+  moralisServerUrl: process.env.REACT_APP_MORALIST_SERVER_URL || 'wrong-data',
 }
 
 export default settings
